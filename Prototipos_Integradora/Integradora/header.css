@@ -1,0 +1,123 @@
+/***************************************ESTILOS DEL HEADER****************************************/
+
+/*Importamos un estilo de letra de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+
+/*Establecemos los estilos base*/
+*{
+    box-sizing: border-box; /*Para que el padding y el border no afecten al ancho y alto de los elementos*/
+    margin: 0; /*Para que no haya márgenes*/
+    padding: 0; /*Para que no haya espaciado entre los elementos*/
+    font-family: 'Nunito', sans-serif; /*Para que el texto tenga una fuente de Google Fonts*/
+    font-size: 20px; /*Para que el texto tenga un tamaño de 20px*/
+}
+
+
+/*Establecemos el color de fondo*/
+body{
+    background: #ffffff; /*Asignamos un color de fondo*/
+}
+
+
+/*Establecemos los estilos del header*/
+.header{
+    display: flex; /*Para que los elementos se muestren en línea*/
+    justify-content: space-between; /*Para que los elementos se distribuyan de manera uniforme*/
+    align-items: center; /*Para que los elementos se centren verticalmente*/
+    height: 85px; /*Para que el header tenga un alto de 85px*/
+    padding: 5px 3%; /*Para que el header tenga un espaciado de 5px arriba y abajo y 3% a los lados*/   
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /*Para que el header tenga una sombra*/
+}
+
+
+/*Establecemos los estilos del logo*/
+.header .logo{
+    cursor: pointer;
+    flex: 1; /*Para que el logo ocupe el espacio restante*/
+    display: flex; /*Para que el logo se muestre en línea*/
+    justify-content: center; /*Para que el logo se centre horizontalmente*/
+    align-items: center; /*Para que el logo se centre verticalmente*/
+    margin-left: 110px; /*Para que el logo se separe del borde izquierdo*/
+}
+.header .logo img{
+    height: 60px; /*Para que el logo tenga un alto de 60px*/
+    width: auto; /*Para que el ancho se ajuste al alto*/
+    transition: all 0.3s; /*Para que la transición sea más suave*/
+}
+.header .logo img:hover{
+    transform: scale(1.1); /*Para que el logo se agrande al pasar el mouse por encima*/
+}
+
+
+/*Establecemos los estilos de la lista de navegación*/
+.header .nav-links{
+    list-style: none; /*Quitar los puntos de tabla*/
+}
+
+
+/*Establecemos los estilos de los elementos de la lista de navegación*/
+.header .nav-links li{
+    display: inline-block; /*Para que los elementos se muestren en línea*/
+    padding: 0px 10px; /*Para darle un espaciado a los elementos*/
+}
+.nav.links li {
+    display: inline-block; /*Para que los elementos se muestren en línea*/
+    margin-right: 10px; /*Para que los elementos se separen entre sí*/
+}
+
+
+/*Establecemos los estilos de los logos de usuario y carrito*/
+.icono-usuario {
+    width: 30px; /*Para que el icono tenga un ancho de 30px*/
+    height: 30px; /*Para que el icono tenga un alto de 30px*/
+    transition: all 0.3s; /*Para que la transición sea más suave*/
+}
+.icono-carrito {
+    width: 30px; /*Para que el icono tenga un ancho de 30px*/
+    height: 30px; /*Para que el icono tenga un alto de 30px*/
+    transition: all 0.3s; /*Para que la transición sea más suave*/
+}
+.icono-usuario:hover {
+    transform: scale(1.2); /*Para que el icono se agrande al pasar el mouse por encima*/
+}
+.icono-carrito:hover {
+    transform: scale(1.2); /*Para que el icono se agrande al pasar el mouse por encima*/
+}
+
+
+/********************************ESTILOS DE LA BARRA DE NAVEGACIÓN********************************/
+
+/*Agregar estilos de la barra de navegación*/
+.secondary-nav {
+    background-color: #002E60; /*Asignar un color de fondo a la barra de navegación*/
+    width: 93%; /*Asignar un ancho a la barra de navegación*/
+    margin: 0 auto; /*Centrar la barra de navegación*/
+    text-align: center; /*Alinear el texto al centro*/
+    padding: 10px 0; /*Agregar un espacio entre el borde y el contenido de la barra de navegación*/
+}
+
+
+/*Agregar estilos a los enlaces de la barra de navegación*/
+.secondary-nav .nav-links-secondary {
+    list-style: none; /*Quitar los puntos de la lista*/
+}
+
+
+/*Agregar estilos a los elementos de la barra de navegación*/
+.nav-links-secondary li{
+    display: inline-block; /*Mostrar los elementos en línea*/
+    padding: 0px 60px; /*Agregar un espacio entre los elementos*/
+    transition: all 0.3s; /*Agregar una transición a los elementos*/
+}
+.nav-links-secondary li:hover {
+    transform: scale(1.1); /*Agregar una escala al pasar el mouse por encima de los elementos*/
+}
+
+
+/*Agregar estilos a los enlaces de los elementos de la barra de navegación*/
+.secondary-nav .nav-links-secondary li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+}
