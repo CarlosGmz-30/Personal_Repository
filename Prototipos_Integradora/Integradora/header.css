@@ -177,7 +177,7 @@ body {
     font-size: 19px;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 800px) {
     .secondary-nav {
         display: none;
     }
@@ -190,24 +190,97 @@ body {
     display: none; /* Ocultar el botón por defecto */
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 800px) {
     .menu {
         display: inline-block; /* Mostrar el botón */
     }
 }
 
 .menu img {
-    width: 30px;
-    height: 30px;
-    transition: all 0.3s;
+    width: 30px; /* Establecer el ancho */
+    height: 30px; /* Establecer el alto */
+    transition: all 0.3s; /* Agregar una transición */
 }
 
-.menu button {
-    background: none;
-    border: none;
-    cursor: pointer;
+.menu button{
+    background: none; /* Quitar el fondo */
+    border: none; /* Quitar el borde */
+    cursor: pointer; /* Cambiar el cursor */
 }
 
 .menu img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Agregar una escala al pasar el mouse por encima */
+}
+
+.header button{
+    background: none; /* Quitar el fondo */
+    border: none; /* Quitar el borde */
+}
+
+
+/************************************ESTILOS DEL MENÚ SECUNDARIO**********************************/
+
+.header a {
+    text-decoration: none;  
+    /* Borramos el que teníamos en .header .nav-links a */
+}
+
+/* Estilos del menú desplegable */
+.header .overlay {
+    height: 100%; /* 100% de altura */
+    width: 0; /* 0 de ancho */
+    position: fixed; /* Fijamos la posición */
+    z-index: 1; /* Establecemos la posición */
+    left: 0; /* Posición a la izquierda */
+    top: 0; /* Posición arriba */
+    background-color: rgba(33, 49, 63, 0.879); /* Color de fondo */
+    overflow: hidden; /* Ocultamos lo que se salga del div */
+    transition: all 0.3s ease 0s; /* Agregamos una transición */
+}
+.header .overlay .overlay-content {
+    display: flex; /* Mostramos los elementos en línea */
+    height: 100%; /* 100% de altura */
+    flex-direction: column; /* Alineamos los elementos en columna */
+    align-items: center; /* Alineamos al centro */
+    justify-content: center; /* Justificamos al centro */ 
+}
+
+/* Estilos de los enlaces del menú desplegable */
+.header .overlay a {
+    padding: 15px; /* Agregamos un espacio entre los elementos */
+    font-size: 30px; /* Tamaño de la fuente */
+    display: block; /* Mostramos los elementos en bloque */
+    transition: all 0.3s ease 0s; /* Agregamos una transición */
+    font-weight: 700; /* Grosor de la fuente */
+    color: #ffffff; /* Color de la fuente */
+}
+
+.header .overlay a:hover{
+    transform: scale(1.1); /* Agregamos una escala al pasar el mouse por encima */
+}
+
+/* Estilos de los enlaces del menú desplegable al pasar el mouse por encima */
+.header .overlay a:hover, 
+.header .overlay a:focus {
+    color: #002E60; /* Color de la fuente */
+}
+
+/* Estilos del botón de cerrar */
+.header .overlay .close {
+    position: absolute; /* Posición absoluta */
+    top: 20px; /* Posición arriba */
+    right: 45px; /* Posición a la derecha */
+    font-size: 65px; /* Tamaño de la fuente */
+}
+
+/* Estilos del botón de cerrar al pasar el mouse por encima */
+@media screen and (max-height: 450px) {
+    .header .overlay a {
+        font-size: 20px; /* Tamaño de la fuente */
+    }
+    .header .overlay .close {
+        font-size: 40px; /* Tamaño de la fuente */
+        top: 15px; /* Posición arriba */
+        right: 35px; /* Posición a la derecha */
+    }
 }
