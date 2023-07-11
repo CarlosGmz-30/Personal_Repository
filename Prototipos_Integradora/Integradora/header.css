@@ -177,11 +177,48 @@ body {
     font-size: 19px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .secondary-nav {
         display: none;
     }
 }
+
+@media (max-width: 1450px) {
+    .nav-links-secondary li {
+        display: inline-block;
+        padding: 0px 45px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .nav-links-secondary li {
+        display: inline-block;
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .nav-links-secondary li {
+        display: inline-block;
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .nav-links-secondary li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .nav-links-secondary li {
+        display: inline-block;
+        padding: 0px 12px;
+    }
+}
+
+
 
 
 /********************************ESTILOS DEL BOTÓN MENÚ SECUNDARIO********************************/
@@ -190,7 +227,7 @@ body {
     display: none; /* Ocultar el botón por defecto */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .menu {
         display: inline-block; /* Mostrar el botón */
     }
