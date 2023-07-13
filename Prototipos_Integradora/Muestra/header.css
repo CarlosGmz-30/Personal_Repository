@@ -134,7 +134,7 @@ body {
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 371px) {
     .headerxd .logoxd {
         margin-left: 50px;
         /*Para que el logo esté centrado*/
@@ -159,28 +159,75 @@ body {
     }
 }
 
-@media (max-width: 296px) {
+@media (max-width: 332px) {
     .headerxd .logoxd {
-        margin-left: 19px;
+        margin-left: 52px;
         /*Para que el logo esté centrado*/
         display: inline-block;
         /*Para que los elementos se muestren en línea*/
     }
 }
 
-
-@media (max-width: 280px) {
+@media (max-width: 339px) {
     .headerxd .logoxd {
-        display: inline-block;
-        /*Para que los elementos se muestren en línea*/
-        margin-left: 25px;
+        margin-left: 45px;
         /*Para que el logo esté centrado*/
-    }
-    .headerxd .nav-linksxd li {
         display: inline-block;
         /*Para que los elementos se muestren en línea*/
-        padding: 1px;
-        /*Para darle un espaciado a los elementos*/
+    }
+}
+
+@media (max-width: 322px) {
+    .headerxd .logoxd {
+        margin-left: 40px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 316px) {
+    .headerxd .logoxd {
+        margin-left: 30px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 306px) {
+    .headerxd .logoxd {
+        margin-left: 20px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 296px) {
+    .headerxd .logoxd {
+        margin-left: 15px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 290px) {
+    .headerxd .logoxd {
+        margin-left: 10px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 284px) {
+    .headerxd .logoxd {
+        margin-left: 0px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
     }
 }
 
@@ -341,7 +388,7 @@ body {
     /* 0 de ancho */
     position: fixed;
     /* Fijamos la posición */
-    z-index: 1;
+    z-index: 9999;
     /* Establecemos la posición */
     left: 0;
     /* Posición a la izquierda */
@@ -382,6 +429,7 @@ body {
     /* Grosor de la fuente */
     color: #ffffff;
     /* Color de la fuente */
+    text-decoration: none;
 }
 
 .headerxd .overlayxd a:hover {
@@ -406,6 +454,7 @@ body {
     /* Posición a la derecha */
     font-size: 65px;
     /* Tamaño de la fuente */
+    text-decoration: none;
 }
 
 /* Estilos del botón de cerrar al pasar el mouse por encima */
