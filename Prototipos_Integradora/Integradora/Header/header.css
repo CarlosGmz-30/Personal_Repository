@@ -54,7 +54,7 @@ body {
     /*Para que el logo se centre horizontalmente*/
     align-items: center;
     /*Para que el logo se centre verticalmente*/
-    margin-left: 110px;
+    margin-left: 60px;
     /*Para que el logo se separe del borde izquierdo*/
 }
 
@@ -125,6 +125,26 @@ body {
     /*Para que el icono se agrande al pasar el mouse por encima*/
 }
 
+@media (max-width: 334px) {
+    .header .logo {
+        margin-left: 22px;
+        /*Para que el logo esté centrado*/
+    }
+}
+
+@media (max-width: 293px) {
+    .header .logo {
+        margin-left: 0;
+        /*Para que el logo esté centrado*/
+    }
+
+    .header .nav-links li {
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+        padding: 1px;
+        /*Para darle un espaciado a los elementos*/
+    }
+}
 
 /********************************ESTILOS DE LA BARRA DE NAVEGACIÓN********************************/
 
