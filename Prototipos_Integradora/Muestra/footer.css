@@ -20,6 +20,7 @@
     align-items: center; /*Para que los elementos del footer se acomoden en el centro de la página*/
     text-align: center; /*Para que el texto de los elementos del footer se acomoden en el centro de la página*/
     background-color: #002E60; /*Para que el fondo del footer sea de color azul*/
+    box-shadow: 0px -5px 5px rgba(118, 118, 118, 0.3);
 }
 
 

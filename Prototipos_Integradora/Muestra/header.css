@@ -27,7 +27,7 @@ body {
 
 
 /*Establecemos los estilos del header*/
-.header {
+.headerxd {
     display: flex;
     /*Para que los elementos se muestren en línea*/
     justify-content: space-between;
@@ -44,7 +44,7 @@ body {
 
 
 /*Establecemos los estilos del logo*/
-.header .logo {
+.headerxd .logoxd {
     cursor: pointer;
     flex: 1;
     /*Para que el logo ocupe el espacio restante*/
@@ -58,7 +58,7 @@ body {
     /*Para que el logo se separe del borde izquierdo*/
 }
 
-.header .logo img {
+.headerxd .logoxd img {
     height: 60px;
     /*Para que el logo tenga un alto de 60px*/
     width: auto;
@@ -67,21 +67,21 @@ body {
     /*Para que la transición sea más suave*/
 }
 
-.header .logo img:hover {
+.headerxd .logoxd img:hover {
     transform: scale(1.1);
     /*Para que el logo se agrande al pasar el mouse por encima*/
 }
 
 
 /*Establecemos los estilos de la lista de navegación*/
-.header .nav-links {
+.headerxd .nav-linksxd {
     list-style: none;
     /*Quitar los puntos de tabla*/
 }
 
 
 /*Establecemos los estilos de los elementos de la lista de navegación*/
-.header .nav-links li {
+.headerxd .nav-linksxd li {
     display: inline-block;
     /*Para que los elementos se muestren en línea*/
     padding: 0px 10px;
@@ -126,19 +126,19 @@ body {
 }
 
 @media (max-width: 334px) {
-    .header .logo {
+    .headerxd .logoxd {
         margin-left: 22px;
         /*Para que el logo esté centrado*/
     }
 }
 
 @media (max-width: 293px) {
-    .header .logo {
+    .headerxd .logoxd {
         margin-left: 0;
         /*Para que el logo esté centrado*/
     }
 
-    .header .nav-links li {
+    .headerxd .nav-linksxd li {
         display: inline-block;
         /*Para que los elementos se muestren en línea*/
         padding: 1px;
@@ -149,7 +149,7 @@ body {
 /********************************ESTILOS DE LA BARRA DE NAVEGACIÓN********************************/
 
 /*Agregar estilos de la barra de navegación*/
-.secondary-nav {
+.secondary-navxd {
     background-color: #002E60;
     /*Asignar un color de fondo a la barra de navegación*/
     width: 93%;
@@ -168,14 +168,14 @@ body {
 
 
 /*Agregar estilos a los enlaces de la barra de navegación*/
-.secondary-nav .nav-links-secondary {
+.secondary-navxd .nav-linksxd-secondary {
     list-style: none;
     /*Quitar los puntos de la lista*/
 }
 
 
 /*Agregar estilos a los elementos de la barra de navegación*/
-.nav-links-secondary li {
+.nav-links-secondaryxd li {
     display: inline-block;
     /*Mostrar los elementos en línea*/
     padding: 0px 60px;
@@ -184,55 +184,55 @@ body {
     /*Agregar una transición a los elementos*/
 }
 
-.nav-links-secondary li:hover {
+.nav-links-secondaryxd li:hover {
     transform: scale(1.1);
     /*Agregar una escala al pasar el mouse por encima de los elementos*/
 }
 
 
 /*Agregar estilos a los enlaces de los elementos de la barra de navegación*/
-.secondary-nav .nav-links-secondary li a {
+.secondary-navxd .nav-links-secondaryxd li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 19px;
 }
 
 @media (max-width: 850px) {
-    .secondary-nav {
+    .secondary-navxd {
         display: none;
     }
 }
 
 @media (max-width: 1450px) {
-    .nav-links-secondary li {
+    .nav-links-secondaryxd li {
         display: inline-block;
         padding: 0px 45px;
     }
 }
 
 @media (max-width: 1350px) {
-    .nav-links-secondary li {
+    .nav-links-secondaryxd li {
         display: inline-block;
         padding: 0px 40px;
     }
 }
 
 @media (max-width: 1250px) {
-    .nav-links-secondary li {
+    .nav-links-secondaryxd li {
         display: inline-block;
         padding: 0px 30px;
     }
 }
 
 @media (max-width: 1150px) {
-    .nav-links-secondary li {
+    .nav-links-secondaryxd li {
         display: inline-block;
         padding: 0px 20px;
     }
 }
 
 @media (max-width: 1050px) {
-    .nav-links-secondary li {
+    .nav-links-secondaryxd li {
         display: inline-block;
         padding: 0px 12px;
     }
@@ -243,33 +243,33 @@ body {
 
 /********************************ESTILOS DEL BOTÓN MENÚ SECUNDARIO********************************/
 
-.menu {
+.menuxd {
     display: none; /* Ocultar el botón por defecto */
 }
 
 @media (max-width: 850px) {
-    .menu {
+    .menuxd {
         display: inline-block; /* Mostrar el botón */
     }
 }
 
-.menu img {
+.menuxd img {
     width: 30px; /* Establecer el ancho */
     height: 30px; /* Establecer el alto */
     transition: all 0.3s; /* Agregar una transición */
 }
 
-.menu button{
+.menuxd button{
     background: none; /* Quitar el fondo */
     border: none; /* Quitar el borde */
     cursor: pointer; /* Cambiar el cursor */
 }
 
-.menu img:hover {
+.menuxd img:hover {
     transform: scale(1.1); /* Agregar una escala al pasar el mouse por encima */
 }
 
-.header button{
+.headerxd button{
     background: none; /* Quitar el fondo */
     border: none; /* Quitar el borde */
 }
@@ -277,13 +277,13 @@ body {
 
 /************************************ESTILOS DEL MENÚ SECUNDARIO**********************************/
 
-.header a {
+.headerxd a {
     text-decoration: none;  
     /* Borramos el que teníamos en .header .nav-links a */
 }
 
 /* Estilos del menú desplegable */
-.header .overlay {
+.headerxd .overlayxd {
     height: 100%; /* 100% de altura */
     width: 0; /* 0 de ancho */
     position: fixed; /* Fijamos la posición */
@@ -294,7 +294,7 @@ body {
     overflow: hidden; /* Ocultamos lo que se salga del div */
     transition: all 0.3s ease 0s; /* Agregamos una transición */
 }
-.header .overlay .overlay-content {
+.headerxd .overlayxd .overlay-contentxd {
     display: flex; /* Mostramos los elementos en línea */
     height: 100%; /* 100% de altura */
     flex-direction: column; /* Alineamos los elementos en columna */
@@ -303,7 +303,7 @@ body {
 }
 
 /* Estilos de los enlaces del menú desplegable */
-.header .overlay a {
+.headerxd .overlayxd a {
     padding: 15px; /* Agregamos un espacio entre los elementos */
     font-size: 30px; /* Tamaño de la fuente */
     display: block; /* Mostramos los elementos en bloque */
@@ -312,18 +312,18 @@ body {
     color: #ffffff; /* Color de la fuente */
 }
 
-.header .overlay a:hover{
+.headerxd .overlayxd a:hover{
     transform: scale(1.1); /* Agregamos una escala al pasar el mouse por encima */
 }
 
 /* Estilos de los enlaces del menú desplegable al pasar el mouse por encima */
-.header .overlay a:hover, 
-.header .overlay a:focus {
+.headerxd .overlayxd a:hover, 
+.headerxd .overlayxd a:focus {
     color: #002E60; /* Color de la fuente */
 }
 
 /* Estilos del botón de cerrar */
-.header .overlay .close {
+.headerxd .overlayxd .closexd {
     position: absolute; /* Posición absoluta */
     top: 20px; /* Posición arriba */
     right: 45px; /* Posición a la derecha */
@@ -332,10 +332,10 @@ body {
 
 /* Estilos del botón de cerrar al pasar el mouse por encima */
 @media screen and (max-height: 450px) {
-    .header .overlay a {
+    .headerxd .overlayxd a {
         font-size: 20px; /* Tamaño de la fuente */
     }
-    .header .overlay .close {
+    .headerxd .overlayxd .closexd {
         font-size: 40px; /* Tamaño de la fuente */
         top: 15px; /* Posición arriba */
         right: 35px; /* Posición a la derecha */
