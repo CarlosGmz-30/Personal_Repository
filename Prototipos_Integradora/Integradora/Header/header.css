@@ -125,16 +125,29 @@ body {
     /*Para que el icono se agrande al pasar el mouse por encima*/
 }
 
-@media (max-width: 334px) {
+@media (max-width: 377px) {
     .headerxd .logoxd {
-        margin-left: 22px;
+        margin-left: 55px;
         /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
     }
 }
 
-@media (max-width: 293px) {
+@media (max-width: 371px) {
     .headerxd .logoxd {
-        margin-left: 0;
+        margin-left: 50px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 366px) {
+    .headerxd .logoxd {
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+        margin-left: 55px;
         /*Para que el logo esté centrado*/
     }
 
@@ -145,6 +158,79 @@ body {
         /*Para darle un espaciado a los elementos*/
     }
 }
+
+@media (max-width: 332px) {
+    .headerxd .logoxd {
+        margin-left: 52px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 339px) {
+    .headerxd .logoxd {
+        margin-left: 45px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 322px) {
+    .headerxd .logoxd {
+        margin-left: 40px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 316px) {
+    .headerxd .logoxd {
+        margin-left: 30px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 306px) {
+    .headerxd .logoxd {
+        margin-left: 20px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 296px) {
+    .headerxd .logoxd {
+        margin-left: 15px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 290px) {
+    .headerxd .logoxd {
+        margin-left: 10px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
+@media (max-width: 284px) {
+    .headerxd .logoxd {
+        margin-left: 0px;
+        /*Para que el logo esté centrado*/
+        display: inline-block;
+        /*Para que los elementos se muestren en línea*/
+    }
+}
+
 
 /********************************ESTILOS DE LA BARRA DE NAVEGACIÓN********************************/
 
@@ -164,6 +250,7 @@ body {
     /*Agregar un radio a la esquina inferior izquierda*/
     border-bottom-right-radius: 10px;
     /*Agregar un radio a la esquina inferior derecha*/
+    height: 50px;
 }
 
 
@@ -197,7 +284,7 @@ body {
     font-size: 19px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 860px) {
     .secondary-navxd {
         display: none;
     }
@@ -244,100 +331,143 @@ body {
 /********************************ESTILOS DEL BOTÓN MENÚ SECUNDARIO********************************/
 
 .menuxd {
-    display: none; /* Ocultar el botón por defecto */
+    display: none;
+    /* Ocultar el botón por defecto */
 }
 
 @media (max-width: 850px) {
     .menuxd {
-        display: inline-block; /* Mostrar el botón */
+        display: inline-block;
+        /* Mostrar el botón */
     }
 }
 
 .menuxd img {
-    width: 30px; /* Establecer el ancho */
-    height: 30px; /* Establecer el alto */
-    transition: all 0.3s; /* Agregar una transición */
+    width: 30px;
+    /* Establecer el ancho */
+    height: 30px;
+    /* Establecer el alto */
+    transition: all 0.3s;
+    /* Agregar una transición */
 }
 
-.menuxd button{
-    background: none; /* Quitar el fondo */
-    border: none; /* Quitar el borde */
-    cursor: pointer; /* Cambiar el cursor */
+.menuxd button {
+    background: none;
+    /* Quitar el fondo */
+    border: none;
+    /* Quitar el borde */
+    cursor: pointer;
+    /* Cambiar el cursor */
 }
 
 .menuxd img:hover {
-    transform: scale(1.1); /* Agregar una escala al pasar el mouse por encima */
+    transform: scale(1.1);
+    /* Agregar una escala al pasar el mouse por encima */
 }
 
-.headerxd button{
-    background: none; /* Quitar el fondo */
-    border: none; /* Quitar el borde */
+.headerxd button {
+    background: none;
+    /* Quitar el fondo */
+    border: none;
+    /* Quitar el borde */
 }
 
 
 /************************************ESTILOS DEL MENÚ SECUNDARIO**********************************/
 
 .headerxd a {
-    text-decoration: none;  
+    text-decoration: none;
     /* Borramos el que teníamos en .header .nav-links a */
 }
 
 /* Estilos del menú desplegable */
 .headerxd .overlayxd {
-    height: 100%; /* 100% de altura */
-    width: 0; /* 0 de ancho */
-    position: fixed; /* Fijamos la posición */
-    z-index: 1; /* Establecemos la posición */
-    left: 0; /* Posición a la izquierda */
-    top: 0; /* Posición arriba */
-    background-color: rgba(33, 49, 63, 0.879); /* Color de fondo */
-    overflow: hidden; /* Ocultamos lo que se salga del div */
-    transition: all 0.3s ease 0s; /* Agregamos una transición */
+    height: 100%;
+    /* 100% de altura */
+    width: 0;
+    /* 0 de ancho */
+    position: fixed;
+    /* Fijamos la posición */
+    z-index: 1;
+    /* Establecemos la posición */
+    left: 0;
+    /* Posición a la izquierda */
+    top: 0;
+    /* Posición arriba */
+    background-color: rgba(33, 49, 63, 0.879);
+    /* Color de fondo */
+    overflow: hidden;
+    /* Ocultamos lo que se salga del div */
+    transition: all 0.3s ease 0s;
+    /* Agregamos una transición */
 }
+
 .headerxd .overlayxd .overlay-contentxd {
-    display: flex; /* Mostramos los elementos en línea */
-    height: 100%; /* 100% de altura */
-    flex-direction: column; /* Alineamos los elementos en columna */
-    align-items: center; /* Alineamos al centro */
-    justify-content: center; /* Justificamos al centro */ 
+    display: flex;
+    /* Mostramos los elementos en línea */
+    height: 100%;
+    /* 100% de altura */
+    flex-direction: column;
+    /* Alineamos los elementos en columna */
+    align-items: center;
+    /* Alineamos al centro */
+    justify-content: center;
+    /* Justificamos al centro */
 }
 
 /* Estilos de los enlaces del menú desplegable */
 .headerxd .overlayxd a {
-    padding: 15px; /* Agregamos un espacio entre los elementos */
-    font-size: 30px; /* Tamaño de la fuente */
-    display: block; /* Mostramos los elementos en bloque */
-    transition: all 0.3s ease 0s; /* Agregamos una transición */
-    font-weight: 700; /* Grosor de la fuente */
-    color: #ffffff; /* Color de la fuente */
+    padding: 15px;
+    /* Agregamos un espacio entre los elementos */
+    font-size: 30px;
+    /* Tamaño de la fuente */
+    display: block;
+    /* Mostramos los elementos en bloque */
+    transition: all 0.3s ease 0s;
+    /* Agregamos una transición */
+    font-weight: 700;
+    /* Grosor de la fuente */
+    color: #ffffff;
+    /* Color de la fuente */
 }
 
-.headerxd .overlayxd a:hover{
-    transform: scale(1.1); /* Agregamos una escala al pasar el mouse por encima */
+.headerxd .overlayxd a:hover {
+    transform: scale(1.1);
+    /* Agregamos una escala al pasar el mouse por encima */
 }
 
 /* Estilos de los enlaces del menú desplegable al pasar el mouse por encima */
-.headerxd .overlayxd a:hover, 
+.headerxd .overlayxd a:hover,
 .headerxd .overlayxd a:focus {
-    color: #002E60; /* Color de la fuente */
+    color: #002E60;
+    /* Color de la fuente */
 }
 
 /* Estilos del botón de cerrar */
 .headerxd .overlayxd .closexd {
-    position: absolute; /* Posición absoluta */
-    top: 20px; /* Posición arriba */
-    right: 45px; /* Posición a la derecha */
-    font-size: 65px; /* Tamaño de la fuente */
+    position: absolute;
+    /* Posición absoluta */
+    top: 20px;
+    /* Posición arriba */
+    right: 45px;
+    /* Posición a la derecha */
+    font-size: 65px;
+    /* Tamaño de la fuente */
 }
 
 /* Estilos del botón de cerrar al pasar el mouse por encima */
 @media screen and (max-height: 450px) {
     .headerxd .overlayxd a {
-        font-size: 20px; /* Tamaño de la fuente */
+        font-size: 20px;
+        /* Tamaño de la fuente */
     }
+
     .headerxd .overlayxd .closexd {
-        font-size: 40px; /* Tamaño de la fuente */
-        top: 15px; /* Posición arriba */
-        right: 35px; /* Posición a la derecha */
+        font-size: 40px;
+        /* Tamaño de la fuente */
+        top: 15px;
+        /* Posición arriba */
+        right: 35px;
+        /* Posición a la derecha */
     }
 }
