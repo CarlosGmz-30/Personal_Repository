@@ -26,7 +26,7 @@
 /*Aplicamos estilos generales para los elementos del footer*/
 #footer p {
     margin: 0; /*Para que no haya margen entre el borde del elemento y el borde de la página*/
-    padding: 20px; /*Para que haya un padding de 20px entre el borde del elemento y el borde de la página*/
+    padding: 15px; /*Para que haya un padding de 20px entre el borde del elemento y el borde de la página*/
     color: white; /*Para que el texto de los elementos del footer sea de color blanco*/
     transition: all 0.3s ease; /*Para que la transición de los elementos del footer sea de 0.3 segundos*/
 }
@@ -36,7 +36,7 @@
 #title {
     margin-left: 5%; /*Para que haya un margen de 5% entre el borde del elemento y el borde de la página*/
     font-weight: bold; /*Para que el texto del elemento sea de color negro*/
-    font-size: 20px; /*Tamaño de letra de 20px*/
+    font-size: 18px; /*Tamaño de letra de 20px*/
     transition: all 0.3s ease; /*Para que la transición de los elementos del footer sea de 0.3 segundos*/
 }
 
@@ -44,6 +44,7 @@
 /*Aplicamo estilos a los componentes del footer*/
 #footer_2 { 
     font-weight: bold; /*Para que la letra esté en negritas*/
+    font-size: 18px; /*Tamaño de letra de 20px*/
     transition: all 0.3s ease; /*Para que la transición de los elementos del footer sea de 0.3 segundos*/
 }
 

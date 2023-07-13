@@ -44,6 +44,7 @@
 /*Aplicamo estilos a los componentes del footer*/
 #footer_2 { 
     font-weight: bold; /*Para que la letra esté en negritas*/
+    font-size: 18px; /*Tamaño de letra de 20px*/
     transition: all 0.3s ease; /*Para que la transición de los elementos del footer sea de 0.3 segundos*/
 }
 
