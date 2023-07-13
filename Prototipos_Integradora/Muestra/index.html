@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar Dos</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="header">
+        <a onclick="openNav()" class="menu" href="#"><button><img src="../../img/menu-hamburguesa.png"></button></a>
         <div class="logo">
-<!---->            <img src="img/Mountain.png" alt="Logo de la marca">
+            <a href="index.html">
+                <img src="../../img/Logo-utez.png" alt="logo">
+            </a>
         </div>
         <nav>
-           <ul class="nav-links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-           </ul>            
+            <ul class="nav-links">
+                <li><a href="#"><img src="../../img/usuario.png" class="icono-usuario"></a></li>
+                <li><a href="#"><img src="../../img/carrito-de-compras.png" class="icono-carrito"></a></li>
+            </ul>
         </nav>
-        <a class="btn" href="#"><button>Contact</button></a>
 
-<!---->        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-
-<!---->        <div id="mobile-menu" class="overlay">
-<!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
-<!---->            <div class="overlay-content">
-<!---->                <a href="#">Services</a>
-<!---->                <a href="#">Projects</a>
-<!---->                <a href="#">About</a>
-<!---->                <a href="#">Contact</a>
-<!---->            </div>
-<!---->        </div>
-
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" class="close" href="#">&times;</a><button></button>
+            <div class="overlay-content">
+                <a href="#">Categoría 1</a>
+                <a href="#">Categoría 2</a>
+                <a href="#">Categoría 3</a>
+                <a href="#">Categoría 4</a>
+                <a href="#">Categoría 5</a>
+                <a href="#">Categoría 6</a>
+            </div>
+        </div>
     </header>
+    <nav class="secondary-nav">
+        <ul class="nav-links-secondary">
+            <li><a href="#">Categoría 1</a></li>
+            <li><a href="#">Categoría 2</a></li>
+            <li><a href="#">Categoría 3</a></li>
+            <li><a href="#">Categoria 4</a></li>
+            <li><a href="#">Categoria 5</a></li>
+            <li><a href="#">Categoria 6</a></li>
+        </ul>
+    </nav>
+    
+    <footer id="footer">
+        <p id="title">Universidad Tecnológica de Emiliano Zapata</p>
+        <p id="description">
+            Av. Universidad Tecnológica No. 1 Col Palo Escrito, C.P. 62760, Emiliano Zapata, Morelos.
+            Teléfono: 01 (777) 3 68 11 65 ó comunícate sin costo al 01 800 050 UTEZ 8839
+        </p>
+        <p id="footer_2">Horario de atención: Lunes a Viernes de 8:00 a.m, a 5:00 p.m.</p>
+    </footer>
 
-
-<!---->    <script type="text/javascript" src="nav.js"></script>
-
+    <script src="header.js"></script>
 </body>
+
 </html>
