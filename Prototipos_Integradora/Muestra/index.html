@@ -3,13 +3,11 @@
 
 <head>
     <title>Inicio</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="carrusel.css">
-    <link rel="stylesheet" href="promos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/promos.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="/Muestra/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -51,54 +49,23 @@
         </ul>
     </nav>
 
-    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2500">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExample" data-slide-to="1"></li>
-            <li data-target="#carouselExample" data-slide-to="2"></li>
-            <li data-target="#carouselExample" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/Img1_3120.jpg" alt="Primera imagen del carrusel">
-                <div class="carousel-caption">
-                    <h5>Catálogo oficial de productos de la UTEZ</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/Img2_3120.jpg" alt="Segunda imagen del carrusel">
-                <div class="carousel-caption">
-                    <h5>Catálogo oficial de productos de la UTEZ</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/Img3_3120.jpg" alt="Tercera imagen del carrusel">
-                <div class="carousel-caption">
-                    <h5>Catálogo oficial de productos de la UTEZ</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/Img4_3120.png" alt="Cuarta imagen del carrusel">
-                <div class="carousel-caption">
-                    <h5>Catálogo oficial de productos de la UTEZ</h5>
-                </div>
-            </div>
+    <div class="image-container">
+        <img src="../img/Img1_3120.jpg" alt="Imagen 1" class="background-image">
+        <div class="overlay"></div>
+        <div class="foreground-image-container">
+          <img id="Logo_Inicio" src="../img/Logo_Inicio_2.png" alt="Imagen 2" class="foreground-image">
         </div>
-
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
+      </div>
+      
 
     <div id="section-promos">
         <h1>PROMOCIONES</h1>
         <div id="promos-container">
-            <h1>:)</h1>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
         </div>
     </div>
 
@@ -111,9 +78,7 @@
         <p id="footer_2">Horario de atención: Lunes a Viernes de 8:00 a.m, a 5:00 p.m.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="header.js"></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>

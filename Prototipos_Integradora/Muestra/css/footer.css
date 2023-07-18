@@ -45,19 +45,9 @@
 /*Aplicamo estilos a los componentes del footer*/
 #footer_2 { 
     font-weight: bold; /*Para que la letra esté en negritas*/
-    font-size: 18px; /*Tamaño de letra de 20px*/
+    font-size: 18px; /*Tamaño de letra de 18px*/
     transition: all 0.3s ease; /*Para que la transición de los elementos del footer sea de 0.3 segundos*/
 }
-
-
-/*Aplicamo estilos de movimiento a los componentes del footer*/
-#footer_2:hover {
-    transform: scale(1.1); /*Aumenta el tamaño*/
-}
-#title:hover {
-    transform: scale(1.1); /*Aumenta el tamaño*/
-}
-
 
 /*Estilos para cuando la pantañña se reduce a 600px*/
 @media (max-width: 600px) {

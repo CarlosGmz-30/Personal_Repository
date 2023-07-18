@@ -237,22 +237,47 @@ body {
 /*Agregar estilos de la barra de navegación*/
 .secondary-navxd {
     background-color: #002E60;
-    /*Asignar un color de fondo a la barra de navegación*/
+    /* Asignar un color de fondo a la barra de navegación */
     width: 93%;
-    /*Asignar un ancho a la barra de navegación*/
+    /* Asignar un ancho a la barra de navegación */
     margin: 0 auto;
-    /*Centrar la barra de navegación*/
+    /* Centrar la barra de navegación */
     text-align: center;
-    /*Alinear el texto al centro*/
+    /* Alinear el texto al centro */
     padding: 10px 0;
-    /*Agregar un espacio entre el borde y el contenido de la barra de navegación*/
+    /* Agregar un espacio entre el borde y el contenido de la barra de navegación */
     border-bottom-left-radius: 10px;
-    /*Agregar un radio a la esquina inferior izquierda*/
+    /* Agregar un radio a la esquina inferior izquierda */
     border-bottom-right-radius: 10px;
-    /*Agregar un radio a la esquina inferior derecha*/
+    /* Agregar un radio a la esquina inferior derecha */
     height: 50px;
+    position: relative;
+    /* Añadimos position: relative; para que funcione la posición fixed después */
+    z-index: 9999;
+    /* Agregamos un índice z alto para asegurar que se muestre por encima del contenido */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    /* Agregamos una transición para que la barra de navegación se desvanezca cuando se desplace hacia abajo */
 }
 
+.secondary-navxd.fixed {
+    position: fixed;
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: all 0.5s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.secondary-navxd.hidden {
+    /* Añadimos una clase para ocultar la barra de navegación */
+    visibility: hidden;
+    opacity: 0;
+    /* Hacemos que la barra sea invisible cuando no esté fija */
+}
 
 /*Agregar estilos a los enlaces de la barra de navegación*/
 .secondary-navxd .nav-linksxd-secondary {
@@ -284,7 +309,7 @@ body {
     font-size: 19px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 880px) {
     .secondary-navxd {
         display: none;
     }
@@ -335,7 +360,7 @@ body {
     /* Ocultar el botón por defecto */
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
     .menuxd {
         display: inline-block;
         /* Mostrar el botón */
