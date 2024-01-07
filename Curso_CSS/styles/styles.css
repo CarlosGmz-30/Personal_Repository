@@ -1,0 +1,47 @@
+/*
+Estructura básica:
+
+selector {
+    propiedad: valor;
+}
+
+CSS Selector:
+
+Universal - Aplicar estilos a todo (*) 
+Tipo - Por elemento ejemplo a todos los h1, h2, etc.
+Clases -  Para todos aquellos que tienen el atributo "class" se utiliza (.clase)
+ID - Para todos aquellos elementos que tienen el atributo "id" se utiliza (#id) DEBEN SER ÚNICOS
+Atributo - Se utiliza [atributo=""] 
+
+Jerarquía:
+
+1- !important
+2- Estilos en línea
+3- Identificadores
+4- Clases
+4- Pseudo-clases
+4- atributos
+5- elementos
+5- pseudo-elementos
+
+Medidas relativas:
+
+1em - 16 píxeles
+
+Propiedades básicas font:
+
+font-size - Tamaño de letra
+font-family - Tipo de letra
+line-height - Tamaño que ocupa arriba y abajo
+font-weight - El ancho de letra
+
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-form {
+    font-size: 25px;
+}
