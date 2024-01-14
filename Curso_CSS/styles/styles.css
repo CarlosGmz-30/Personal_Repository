@@ -37,11 +37,18 @@ font-weight - El ancho de letra
 
 */
 
-*{
-    padding: 0px;
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
 }
 
 .contact-form {
     font-size: 25px;
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+    color: red;
 }
