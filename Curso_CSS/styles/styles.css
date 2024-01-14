@@ -35,6 +35,46 @@ font-family - Tipo de letra
 line-height - Tamaño que ocupa arriba y abajo
 font-weight - El ancho de letra
 
+
+Padding:
+
+top - right - bottom - left
+eje x - eje y
+
+Propiedades para cajas:
+
+background-color: red;
+display: inline-block;
+padding: 100px;
+box-sizing: border-box;
+text-align: center;
+margin: 20px 10px;
+border-radius: 2em;
+border: 5px solid #a22;
+box-shadow: 30px 20px 10px 10px #000;
+text-shadow: 2px 2px 7px #fff;
+transform: rotate(-45deg);
+
+Outline:
+
+Es una manera de resaltar cajas sin afectar las medidas de los demás objetos en la página web
+
+
+Position: (z-index Es la posición de las capas por defecto todas tienen 0 al usar position)
+
+1. Static - Es como la neutro
+
+2. Relative - Las cajas de mueven pero mantienen su espacio en la página,
+y el punto de referencia sigue siendo el mismo (Top y Left son las más importantes)
+
+3. Absolute - Hace que el espacio reservado de las cajas ya no esté
+
+4. Fixed - 
+
+5. Sticky - 
+
+
+
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -42,13 +82,24 @@ font-weight - El ancho de letra
 * {
     font-family: 'Lobster', cursive;
     font-weight: 100;
+    font-size: 30px;
 }
 
-.contact-form {
-    font-size: 25px;
+div {
+    width: 150px;
+    height: 150px;
+    display: block;
+    background: yellow;
 }
 
-.contact-form__h2 {
-    font-size: 2em;
-    color: red;
+.caja-1 {
+    background: orange;
+}
+
+.caja-2 {
+    background: green;
+}
+
+.caja-3 {
+    background: lightblue;
 }
