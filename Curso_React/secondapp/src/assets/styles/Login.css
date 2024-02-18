@@ -1,0 +1,192 @@
+.generalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.loginContainer {
+  width: 90vh;
+  height: 72vh;
+  background-color: #265f9bcc;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+  padding: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #002e60;
+}
+
+.formsContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  width: 50%;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input {
+  margin-bottom: 18px;
+  border-radius: 5px;
+  height: 20px;
+  border: 1px solid #7c7c7c;
+  padding: 10px;
+  color: #7c7c7c;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#btnLogin {
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: #002e60;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+
+#btnLogin:hover {
+  transform: scale(1.04);
+}
+
+.remindContainer {
+  display: flex;
+  font-size: 13px;
+}
+
+
+#remind {
+  margin-left: 10px;
+}
+
+#btnForget {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  padding: 15px;
+  transition: all 0.3s;
+}
+
+#btnForget:hover {
+  color: #009475;
+}
+
+/**************** DISEÑOS RESPONSIVOS ******************/
+
+@media only screen and (max-width: 1024px) {
+  .loginContainer {
+    width: 50%;
+    height: 75%;
+  }
+
+  #title {
+    padding: 10px;
+  }
+
+  label,
+  input {
+    font-size: 13px;
+  }
+
+  .formsContainer {
+    width: 60%;
+  }
+
+  #btnForget {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .loginContainer {
+    margin-top: 20px;
+    width: 75%;
+    height: 70%;
+  }
+
+  #title {
+    text-align: start;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  label,
+  input {
+    font-size: 13px;
+  }
+
+  #btnForget {
+    font-size: 11px;
+  }
+
+  .formsContainer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .generalContainer {
+    align-items: start;
+  }
+
+  .loginContainer {
+    margin-top: 35px;
+    width: 85%;
+    height: 85%;
+  }
+
+  #title {
+    text-align: start;
+    border-bottom: none;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+
+  .formsContainer,
+  .titleContainer {
+    width: 72%;
+  }
+
+  label,
+  input {
+    font-size: 14px;
+  }
+
+  #btnLogin {
+    margin-top: 30px;
+  }
+
+  #btnForget {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #btnForget {
+    font-size: 10px;
+  }
+}
