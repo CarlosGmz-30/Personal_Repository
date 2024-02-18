@@ -69,7 +69,8 @@ y el punto de referencia sigue siendo el mismo (Top y Left son las más importan
 
 3. Absolute - Hace que el espacio reservado de las cajas ya no esté
 
-4. Fixed - 
+4. Fixed - Hace lo mismo que el absolute y ahí se mantiene, por ejemplo para la creación de un menú
+mantener fija la barra de navegación.
 
 5. Sticky - 
 
